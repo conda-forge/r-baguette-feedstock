@@ -5,11 +5,9 @@ Home: https://github.com/tidymodels/baguette
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-baguette-feedstock/blob/master/LICENSE.txt)
 
 Summary: Tree- and rule-based models can be bagged using this package and their predictions equations are stored in an efficient format to reduce the model objects size and speed.
-
-
 
 Current build status
 ====================
