@@ -1,4 +1,4 @@
-{% set version = '0.0.1' %}
+{% set version = "0.1.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/baguette_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/baguette/baguette_{{ version }}.tar.gz
-  sha256: e7ede153ba5a49e30f396ee815f6a7a43d5260c6adc5c0117943419998920ed9
+  sha256: 3661e51fc876ffa9f969bb1a4ac9f2ee956ddcf7f2c542cf4a230735d4025e7a
 
 build:
-  merge_build_host: True  # [win]
-  number: 1
+  merge_build_host: true  # [win]
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -70,12 +70,10 @@ test:
 about:
   home: https://github.com/tidymodels/baguette
   license: MIT
-  summary: Tree- and rule-based models can be bagged using this package and their predictions
-    equations are stored in an efficient format to reduce the model objects size and
-    speed.
+  summary: Tree- and rule-based models can be bagged using this package and their predictions equations are stored in an efficient format to reduce the model objects size and speed.
   license_family: MIT
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/MIT'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/MIT
     - LICENSE
 
 extra:
