@@ -1,4 +1,4 @@
-{% set version = "0.1.0" %}
+{% set version = "0.1.1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/baguette_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/baguette/baguette_{{ version }}.tar.gz
-  sha256: 3661e51fc876ffa9f969bb1a4ac9f2ee956ddcf7f2c542cf4a230735d4025e7a
+  sha256: 670515159e0f278916ec80c9985b8d80845a11bedfa424111d598808bddd3b6b
 
 build:
   merge_build_host: true  # [win]
