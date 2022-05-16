@@ -1,4 +1,4 @@
-{% set version = "0.1.1" %}
+{% set version = "0.2.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/baguette_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/baguette/baguette_{{ version }}.tar.gz
-  sha256: 670515159e0f278916ec80c9985b8d80845a11bedfa424111d598808bddd3b6b
+  sha256: 483c1547c14dba558fb7a412eeb02ea422639c3e3aece48825f7afc70e4f6146
 
 build:
   merge_build_host: true  # [win]
@@ -79,6 +79,7 @@ about:
 extra:
   recipe-maintainers:
     - conda-forge/r
+
 
 # Package: baguette
 # Title: Efficient Model Functions for Bagging
